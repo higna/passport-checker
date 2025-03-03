@@ -8,8 +8,8 @@ def index():
     if request.method == "POST":
         name = request.form["name"]
         validity = request.form["validity"]
-
-        # Convert inputs to datetime objects
+        
+        #instantiate date functioons
         today = dt.datetime.now()
         validity_date = dt.datetime.strptime(validity, '%Y-%m')
 
